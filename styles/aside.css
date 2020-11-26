@@ -1,0 +1,33 @@
+#aside-left {
+    background-color: #5a6572;
+    padding-top: 35px;
+    z-index: 1;
+}
+
+#aside-left .title {
+    border-radius: 2px;
+    background-color: brown;
+    text-align: center;
+    width: 200px;
+    padding: 15px 0px;
+    margin: 20px 120px;
+    transition-duration: 0.2s;
+    border: 2px teal solid;
+    box-shadow: -30px 15px 0px 0px rgba(34, 60, 80, 0.5);
+}
+
+#aside-left .title:hover {
+    background-color: teal;
+}
+
+#aside-left .aside-content {
+    background-color: #3e4650;
+    border-radius: 2px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#aside-right-empty {
+    background-color: rgb(226, 226, 226);
+}

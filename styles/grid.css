@@ -1,0 +1,28 @@
+body {
+    display: grid;
+    grid-template: 1fr 1000px 200px / 300px 1fr 0.1fr;
+    grid-template-areas:
+    "header header header"
+    "aside-left viewport aside-right-empty"
+    "aside-left footer footer";
+}
+
+header {
+    grid-area: header;
+}
+
+#aside-left {
+    grid-area: aside-left;
+}
+
+#aside-right-empty {
+    grid-area: aside-right-empty;
+}
+
+#viewport {
+    grid-area: viewport;
+}
+
+footer {
+    grid-area: footer;
+}
