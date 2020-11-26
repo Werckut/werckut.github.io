@@ -6,4 +6,9 @@ body {
 
 footer {
     background-color: #ccc;
+    text-align: center;
+}
+
+footer p {
+    color: rgb(226, 226, 226)
 }

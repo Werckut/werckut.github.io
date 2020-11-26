@@ -12,12 +12,13 @@
     padding: 15px 0px;
     margin: 20px 120px;
     transition-duration: 0.2s;
-    border: 2px teal solid;
+    border: 2px #771e1e solid;
     box-shadow: -30px 15px 0px 0px rgba(34, 60, 80, 0.5);
 }
 
 #aside-left .title:hover {
-    background-color: teal;
+    background-color: #911c1c ;
+    transform: scale(1.03);
 }
 
 #aside-left .aside-content {
