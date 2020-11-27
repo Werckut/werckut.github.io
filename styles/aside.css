@@ -10,7 +10,9 @@
     text-align: center;
     width: 200px;
     padding: 15px 0px;
-    margin: 20px 120px;
+    position: relative;
+    left: 120px;
+    margin: 20px 0px;
     transition-duration: 0.2s;
     border: 2px #771e1e solid;
     box-shadow: -30px 15px 0px 0px rgba(34, 60, 80, 0.5);

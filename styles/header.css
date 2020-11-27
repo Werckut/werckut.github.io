@@ -46,3 +46,63 @@ header a {
 header a:hover {
     color: #ccc;
 }
+
+#menu {
+    display: block;
+}
+
+#menu img {
+    height: 45px;
+}
+
+
+#close {
+    display: none;
+}
+
+#menu:target #close {
+    display: block;
+    position: absolute;
+    right: 50px;
+    top: 10px;   
+}
+
+#open {
+    display: block;
+    position: absolute;
+    right: 50px;
+    top: 10px;
+}
+
+#menu:target #open {
+    display: none;
+}
+
+#menu:target #menu-buttom {
+    display: grid;
+}
+
+
+#menu-buttom {
+    display: none;
+    text-align: center;
+    grid-template: 1fr / 1fr 1fr 1fr;
+    position: absolute;
+    top: 62px;
+    left: 0px;
+    width: 100%;
+    background-color: brown;
+    box-shadow: 0px 2px 6px 3px rgba(0, 0, 0, 0.35);
+}
+
+#menu {
+    display: none;
+}
+
+.menu-item {
+    background-color: cadetblue;
+    box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.35) inset;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 4px;
+}
