@@ -63,15 +63,15 @@ header a:hover {
 #menu:target #close {
     display: block;
     position: absolute;
-    right: 50px;
-    top: 10px;   
+    right: 25px;
+    top: 8px;   
 }
 
 #open {
     display: block;
     position: absolute;
-    right: 50px;
-    top: 10px;
+    right: 25px;
+    top: 8px;
 }
 
 #menu:target #open {
@@ -79,9 +79,8 @@ header a:hover {
 }
 
 #menu:target #menu-buttom {
-    display: grid;
+    display: block;
 }
-
 
 #menu-buttom {
     display: none;
@@ -93,6 +92,8 @@ header a:hover {
     width: 100%;
     background-color: brown;
     box-shadow: 0px 2px 6px 3px rgba(0, 0, 0, 0.35);
+    border: 3px #24292E solid;
+    border-top: none;
 }
 
 #menu {
@@ -101,8 +102,10 @@ header a:hover {
 
 .menu-item {
     background-color: cadetblue;
-    box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.35) inset;
-    margin: 10px;
-    padding: 10px;
+    border: 2px #24292E solid;
+    width: 50%;
+    box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.35) inset;
+    margin: 20px auto;
+    padding: 10px 30px;
     border-radius: 4px;
 }
