@@ -1,25 +1,28 @@
 body {
     display: grid;
-    grid-template: 80px 1fr 150px / 0.1fr 1fr 300px;
-    word-wrap: break-word;
+    grid-template: 1fr 1000px 200px / 300px 1fr 0.1fr;
     grid-template-areas:
     "header header header"
-    ". content  aside"
-    "footer footer aside";
+    "aside-left viewport aside-right-empty"
+    "aside-left footer footer";
 }
 
 header {
     grid-area: header;
 }
 
-aside {
-    grid-area: aside;
+#aside-left {
+    grid-area: aside-left;
+}
+
+#aside-right-empty {
+    grid-area: aside-right-empty;
+}
+
+#viewport {
+    grid-area: viewport;
 }
 
 footer {
     grid-area: footer;
-}
-
-#content {
-    grid-area: content;
 }
