@@ -1,0 +1,282 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome file</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__left">
+    <div class="stackedit__toc">
+      
+<ul>
+<li><a href="#добро-пожаловать-в-руководство">Добро пожаловать в руководство</a>
+<ul>
+<li><a href="#w.i.p">W.I.P</a></li>
+</ul>
+</li>
+<li><a href="#подготовка">Подготовка</a>
+<ul>
+<li><a href="#выбор-ide">Выбор IDE</a></li>
+<li><a href="#работа-с-ядром-сервера">Работа с ядром сервера</a></li>
+</ul>
+</li>
+<li><a href="#начало-создания-плагина">Начало создания плагина</a>
+<ul>
+<li><a href="#создание-проекта">Создание проекта</a></li>
+<li><a href="#структура-проекта">Структура проекта</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+  </div>
+  <div class="stackedit__right">
+    <div class="stackedit__html">
+      <h1 id="добро-пожаловать-в-руководство">Добро пожаловать в руководство</h1>
+<p><em><strong>Если вы хотите подержать автора, вам сюда &gt; <a href="https://boosty.to/werckut">клик</a><br>
+Если вы хотите помочь в написании статей, или задать вопрос, вам сюда &gt; <a href="https://github.com/Werckut/Werckut/discussions">клик</a></strong></em></p>
+<p>Подробное руководство по созданию spigot/bukkit minecft плагина.<br>
+Руководство даст базу необходимую для создания своего minecraft плагина.</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">Версия</th>
+<th align="center">1.16.x</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Состояние</td>
+<td align="center">W.I.P</td>
+</tr>
+</tbody>
+</table><h2 id="w.i.p">W.I.P</h2>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="true" disabled=""> Подготовка</li>
+<li>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="true" disabled=""> Выбор IDE</li>
+</ul>
+</li>
+<li>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="true" disabled=""> Работа с ядром сервера</li>
+</ul>
+</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Начало создания плагина</li>
+<li>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="true" disabled="">  Создание проекта</li>
+</ul>
+</li>
+<li>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="">  Структура проекта</li>
+</ul>
+</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Первый плагин</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Обработка событий</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Свои команды</li>
+<li>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Продвинутые команды</li>
+</ul>
+</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Конфиг файл плагина</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Работа с БД</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> <s>Придумать ещё больше пунктов</s></li>
+</ul>
+<h1 id="подготовка">Подготовка</h1>
+<h2 id="выбор-ide">Выбор IDE</h2>
+
+<table>
+<thead>
+<tr>
+<th align="center">IDE</th>
+<th align="center">Eclipce</th>
+<th align="center">NetBeance</th>
+<th align="center">Intellij IDEA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Доступность</td>
+<td align="center">Бесплатная</td>
+<td align="center">Бесплатная</td>
+<td align="center">Бесплатная, урезанная версия</td>
+</tr>
+<tr>
+<td align="center">Видео</td>
+<td align="center">Большинство</td>
+<td align="center">Мало</td>
+<td align="center">Число растёт</td>
+</tr>
+</tbody>
+</table><p><em>Eclipce</em> - мощная и популярная.<br>
+<em>Intellij IDEA</em> - ещё более мощная.<br>
+<em>NetBeance</em> - для слабых пк подойдёт, простой интерфейс.<br>
+(если у вас есть 8гб озу у вас пойдёт любая <em>ide</em> + minecraft).<br>
+Все <em>ide</em> ± равны, отличия появятся только в глубоком изучении java.</p>
+<blockquote>
+<p>Сейчас вы можете смело выбрать <em>ide</em> “на вид”, не смотрите на возможности, их более чем достаточно для нашего дела.</p>
+</blockquote>
+<p>За всё время я успел поработать в каждой из этих <em>ide</em>, но остановил свой выбор на <strong>Intellij IDEA</strong> <span class="spy">(вообще при выборе <em>ide</em>, первым делом я иду к JetBrains 🙃)</span><br>
+Это очень мощная <em>ide</em> под java/android, но в платной версии можно ещё и web разработкой заниматься.<br>
+Именно в ней я буду показывать как и что делать.</p>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> <s>“Создание проект” и “Структура проекта” для других <em>ide</em></s></li>
+</ul>
+<h2 id="работа-с-ядром-сервера">Работа с ядром сервера</h2>
+<h3 id="популярные-ядра"> Популярные ядра</h3>
+<span class="spy">(Вернее те, что знаю я)</span>
+<ul>
+<li><em>CraftBukkit</em> [плагины] <a href="https://getbukkit.org/download/craftbukkit">ссылка</a></li>
+<li><em>Spigot</em> [плагины] <a href="https://getbukkit.org/download/spigot">ссылка</a></li>
+<li><em>Sponge</em> [плагины + моды] <a href="https://www.spongepowered.org/downloads/">ссылка</a></li>
+<li><em>Thermos</em> [плагины + моды] <a href="https://cyberdynecc.github.io/Thermos/install">ссылка</a> <span class="spy">- GitHub Page между прочем</span></li>
+</ul>
+<p>Я буду работать на ядре <em>Spigot</em>.<br>
+<span class="spy">Если не ошибаюсь, Spigor - переписанный Bukkit.</span></p>
+<blockquote>
+<p>Spigot - Это более производительная платформа для bukkit, со многими улучшениями,  вот некоторые из них:</p>
+</blockquote>
+<pre class=" language-markdown"><code class="prism  language-markdown"><span class="token list punctuation">-</span>   Увеличение TPS
+<span class="token list punctuation">-</span>   Оптимизированы события роста, подсчет чанков
+<span class="token list punctuation">-</span>   Автоматическое собирание шаров опыта и предметов в стаки.
+<span class="token list punctuation">-</span>   Выключено случайное обновление света
+<span class="token list punctuation">-</span>   Возможность создать свое сообщение, при отказе в вайтлисте
+<span class="token list punctuation">-</span>   Возможность конфигурировать записываемые события в лог
+<span class="token list punctuation">-</span>   Свое сообщение при выключении сервера
+<span class="token list punctuation">-</span>   Команда перезагрузки
+<span class="token list punctuation">-</span>   Автоматическое обновление
+</code></pre>
+<p><a href="http://rubukkit.org/threads/spigot-craftbukkit.25335/">Источник</a></p>
+<h3 id="создание-сервера">Создание сервера</h3>
+<p><span class="warning">Сервер нужен будет для разработки плагина!</span></p>
+<ul>
+<li>Скачайте нужное вам ядро. P.S - <a href="#популярные-ядра">они были тут</a>.<br>
+Напомню, что я выбрал <em>Spigor-1.16.4</em>.</li>
+</ul>
+<p>Для удобства создадим папку для сервера и перенесём туда наше ядро.</p>
+<ul>
+<li>Создадим запускной файл<br>
+Для windows "&lt;название&gt;.bat&gt;, для linux “&lt;название&gt;.sh”.<br>
+У меня  linux и файл будет называть “<a href="http://start.sh">start.sh</a>”, на windows может называться “start.bat”.<br>
+В файл вставляем следующее:<br>
+<code>java -Xmx1024M -Xms1024M -jar &lt;название ядра&gt;.jar nogui</code><br>
+-Xmx/Xms - максимальное и минимальное выделение оперативной памяти для сервера.<br>
+Можете убрать <em>nogui</em> и посмотреть, что будет.<br>
+В моём случае фай выглядит так:<br>
+<code>java -Xmx1024M -Xms1024M -jar spigot-1.16.4.jar nogui</code></li>
+</ul>
+<p><span class="warning">Может быть такое, что у вас не включены расширения у файлов!!! Но все ядра имеют расширение <em>.jar</em> и не нужно писать &lt;название ядра.jar&gt; <em>.jar</em> . А вообще советую их включить. </span></p>
+<span class="advice">
+Жизненный взлом (live hack) если вы забыли, что нужно вставлять, пишем в поисковик *"скачать майнкрафт сервер"*, переходим на minecraft.net <span class="spy"> (это официальный сайт майна если шо)</span> и там находим нужную нам строчку. <a href="https://www.minecraft.net/ru-ru/download/server">Вот прямая ссылка</a>
+</span>
+<ul>
+<li>Запускаем наш .bat или .sh файл.</li>
+<li>После загрузки появиться файл eula.txt<br>
+это соглашение. Просто заходим в него и заменяем<br>
+<code>eula=false</code> на <code>eula=true</code></li>
+<li>Снова запускаем .bat/.sh файл</li>
+<li>После окончания загрузки ваш сервер готов к работе.<br>
+Чтобы на него зайти используйте <em>localhost:25565</em>.</li>
+</ul>
+<p><span class="warning">Если вы на пиратской версии майнкрафта выключите online-mod!!!</span></p>
+<h3 id="настройка-server.proparties">Настройка <em>server.proparties</em></h3>
+<p><span class="spy">Текст не для копирования!</span></p>
+<pre><code>gamemode=survival // можно поменять на creative.
+enable-command-block=false // если знаете, что такое КБ ставим true)).
+level-name=world // название мира (не сервера).
+motd=A Minecraft Server // описание сервера в меню серверов,можно '§'.
+pvp=true
+generate-structures=true // можно отключить, чтобы лишник раз не генерировать структуры.
+
+online-mode=true // !!! если вы хотите, чтобы пиратские аккаунты могли заходить на ваш сервер - ставим false !!!
+
+server-ip= // по умолчанию localhost
+allow-nether=true // можно выключить, чтобы не создавать незер.
+server-port=25565 // оставляем
+</code></pre>
+<h1 id="начало-создания-плагина">Начало создания плагина</h1>
+<h2 id="создание-проекта">Создание проекта</h2>
+<blockquote>
+<p>Создадим основу для создания плагина<br>
+Напишем первый консольный плагин</p>
+</blockquote>
+<ul>
+<li>Зайдём в нашу <em>ide</em> (у меня Intellij IDEA).</li>
+<li>Создадим новый java проект.</li>
+</ul>
+<ol>
+<li>File &gt; New &gt; Project…<br>
+<img src="images/ide_0.png" alt="alt"></li>
+<li>Выберем Java.</li>
+<li>Тут нам нужно выбрать <em>JDK java-1.8</em><br>
+Если у вас нет <em>jdk 1.8</em> в выпадающем меню <em>“Project SDK”</em> выберите <em>“Download JDK…”</em>, версию ставим 1.8.<br>
+<img src="images/ide_1.png" alt="alt"></li>
+</ol>
+<blockquote>
+<p><em>жмём</em> <em><strong>next</strong></em></p>
+</blockquote>
+<ol start="4">
+<li>Желательно поставить галочку.<br>
+<img src="images/ide_2.png" alt="alt"></li>
+</ol>
+<blockquote>
+<p><em>жмём</em> <em><strong>next</strong></em></p>
+</blockquote>
+<ol start="5">
+<li>Зададим имя проекту. <span class="spy">(у меня <em>TutPlugin</em>).</span><br>
+Выберете удобную вам папку для проекта.<br>
+Если вы ставили галочку, пропишем пакеты, по типу:<br>
+&lt;домен&gt;.&lt;ник/компания&gt; - это лишь пример, по факту во 2-ую &lt;&gt; вы можете поставить что угодно. Если не поставили, жмём <em>“Previous”</em> и ставим галочку :D.</li>
+</ol>
+<blockquote>
+<p>у меня так:<br>
+&lt;домен&gt; - обычно ставят com, но я иду против систем и пишу ru.<br>
+&lt;ник&gt; - теперь вы знаете мой ник.</p>
+</blockquote>
+<p><img src="images/ide_3.png" alt="alt"></p>
+<blockquote>
+<p><em>жмём</em> <em><strong>finish</strong></em></p>
+</blockquote>
+<p><em><strong>Осталось немного.</strong></em><br>
+<em>Если вы не ставили галочку:</em><br>
+В src - <strong>new &gt; Package</strong> : Название - <em>“&lt;домен&gt;.&lt;название&gt;”</em>.</p>
+<ol>
+<li>В созданном пакете, создадим <strong>Main класс</strong>.<br>
+<em>Клик по пакету</em> <strong>new &gt; Java Class</strong><br>
+Название любое. <span class="spy">(у меня <em>MainPlugin</em>)</span></li>
+<li>В src создадим <em>“plugin.yml”</em></li>
+</ol>
+<p><strong>В него пишем обязательные поля:</strong></p>
+<pre class=" language-yml"><code class="prism  language-yml"><span class="token key atrule">name</span><span class="token punctuation">:</span> &lt;название<span class="token punctuation">&gt;</span> <span class="token comment"># Для удобства пишу TutPlugin (название проекта)</span>
+<span class="token key atrule">main</span><span class="token punctuation">:</span> &lt;домен<span class="token punctuation">&gt;</span>.&lt;название<span class="token punctuation">&gt;</span> <span class="token comment"># путь к нашему Main классу (MainPlugin)</span>
+<span class="token key atrule">version</span><span class="token punctuation">:</span> &lt;номер<span class="token punctuation">&gt;</span> <span class="token comment"># Версию нашего плагина (Я ставлю "1.0.0" - релиз xD)</span>
+</code></pre>
+<p><em>Ещё я добавлю:</em></p>
+<pre class=" language-yml"><code class="prism  language-yml"><span class="token comment"># Это поле не обязательно, но приятно, чтобы в плагине стоял ты в авторах</span>
+<span class="token key atrule">author</span><span class="token punctuation">:</span> Werckut <span class="token comment"># все же должны знать кто создал сие чудо</span>
+</code></pre>
+<p><em><strong>Результат</strong></em><br>
+<img src="images/ide_4.png" alt="alt"></p>
+<h2 id="структура-проекта">Структура проекта</h2>
+<blockquote>
+<ul>
+<li>Подробнее разберём plugin.yml</li>
+<li>Разберём валидную структуру проектов java и plugin в частности.</li>
+</ul>
+</blockquote>
+<p>Ты про импорт библиотеки забыл</p>
+
+    </div>
+  </div>
+</body>
+
+</html>
