@@ -1,0 +1,26 @@
+.spy {
+    color: rgb(180, 180, 180);
+}
+
+.warning {
+    text-align: justify;
+    padding: 5px 12px;
+    background-color: gainsboro;
+    border-left: 2px solid red;
+    border-right: 2px solid red;
+    color: red;
+}
+
+.advice {
+    text-align: justify;
+    padding: 5px 12px;
+    background-color: gainsboro;
+    border-left: 2px solid green;
+    border-right: 2px solid green;
+    color: green;
+}
+
+.stackedit__toc ul ul li a::before {
+    content: ">";
+    margin: 0px 10px;
+}
