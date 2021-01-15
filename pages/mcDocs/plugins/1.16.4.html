@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>McPluginDocs by Werckut</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Welcome file</title>
   <link rel="stylesheet" href="https://stackedit.io/style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="stackedit">
@@ -19,6 +19,7 @@
 <li><a href="#w.i.p">W.I.P</a></li>
 </ul>
 </li>
+<li><a href="#полезные-ресурсы-и-ссылки">Полезные ресурсы и ссылки</a></li>
 <li><a href="#подготовка">Подготовка</a>
 <ul>
 <li><a href="#выбор-ide">Выбор IDE</a></li>
@@ -28,7 +29,6 @@
 <li><a href="#начало-создания-плагина">Начало создания плагина</a>
 <ul>
 <li><a href="#создание-проекта">Создание проекта</a></li>
-<li><a href="#структура-проекта">Структура проекта</a></li>
 </ul>
 </li>
 </ul>
@@ -40,8 +40,17 @@
       <h1 id="добро-пожаловать-в-руководство">Добро пожаловать в руководство</h1>
 <p><em><strong>Если вы хотите подержать автора, вам сюда &gt; <a href="https://boosty.to/werckut">клик</a><br>
 Если вы хотите помочь в написании статей, или задать вопрос, вам сюда &gt; <a href="https://github.com/Werckut/Werckut/discussions">клик</a></strong></em></p>
-<p>Подробное руководство по созданию spigot/bukkit minecft плагина.<br>
-Руководство даст базу необходимую для создания своего minecraft плагина.</p>
+<hr>
+<p><em><strong>Для удобства оставлю это здесь</strong></em></p>
+<pre><code>&lt;заголовок&gt; / &lt;название_файла&gt;
+&lt;содержание файла&gt;
+</code></pre>
+<p><span class="spy">Не важный текст (даже мои мысли скорее)</span><br>
+<span class="advice">совет</span><br>
+<span class="warning">важная информация</span></p>
+<hr>
+<p><em><strong>Подробное руководство по созданию spigot/bukkit minecraft плагина.</strong></em><br>
+<span class="spy">(рассчитан на нубиков)</span></p>
 
 <table>
 <thead>
@@ -80,18 +89,57 @@
 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="">  Структура проекта</li>
 </ul>
 </li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Разработка плагинов</li>
+<li>
+<ul>
 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Первый плагин</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Обработка событий</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Свои команды</li>
+</ul>
+</li>
+<li>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Scorebords</li>
+</ul>
+</li>
+<li>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="">   Обработка событий</li>
+</ul>
+</li>
+<li>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Пользовательские команды</li>
+</ul>
+</li>
 <li>
 <ul>
 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Продвинутые команды</li>
 </ul>
 </li>
+<li>
+<ul>
 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Конфиг файл плагина</li>
+</ul>
+</li>
+<li>
+<ul>
 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Работа с БД</li>
+</ul>
+</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Ещё плагины</li>
+<li>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Кирка 3 на 3</li>
+</ul>
+</li>
+<li>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Vine Miner</li>
+</ul>
+</li>
 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> <s>Придумать ещё больше пунктов</s></li>
 </ul>
+<hr>
+<h1 id="полезные-ресурсы-и-ссылки">Полезные ресурсы и ссылки</h1>
 <h1 id="подготовка">Подготовка</h1>
 <h2 id="выбор-ide">Выбор IDE</h2>
 
@@ -139,14 +187,15 @@
 <li><em>CraftBukkit</em> [плагины] <a href="https://getbukkit.org/download/craftbukkit">ссылка</a></li>
 <li><em>Spigot</em> [плагины] <a href="https://getbukkit.org/download/spigot">ссылка</a></li>
 <li><em>Sponge</em> [плагины + моды] <a href="https://www.spongepowered.org/downloads/">ссылка</a></li>
-<li><em>Thermos</em> [плагины + моды] <a href="https://cyberdynecc.github.io/Thermos/install">ссылка</a> <span class="spy">- GitHub Page между прочем</span></li>
+<li><em>Thermos</em> [плагины + моды] <a href="https://cyberdynecc.github.io/Thermos/install">ссылка</a> <span class="spy">- GitHub Page между прочем.</span></li>
 </ul>
 <p>Я буду работать на ядре <em>Spigot</em>.<br>
-<span class="spy">Если не ошибаюсь, Spigor - переписанный Bukkit.</span></p>
+<span class="spy">(Если не ошибаюсь, Spigor - переписанный Bukkit)</span></p>
 <blockquote>
 <p>Spigot - Это более производительная платформа для bukkit, со многими улучшениями,  вот некоторые из них:</p>
 </blockquote>
-<pre class=" language-markdown"><code class="prism  language-markdown"><span class="token list punctuation">-</span>   Увеличение TPS
+<pre class=" language-markdown"><code class="prism  language-markdown">Источник ниже
+<span class="token list punctuation">-</span>   Увеличение TPS
 <span class="token list punctuation">-</span>   Оптимизированы события роста, подсчет чанков
 <span class="token list punctuation">-</span>   Автоматическое собирание шаров опыта и предметов в стаки.
 <span class="token list punctuation">-</span>   Выключено случайное обновление света
@@ -158,7 +207,7 @@
 </code></pre>
 <p><a href="http://rubukkit.org/threads/spigot-craftbukkit.25335/">Источник</a></p>
 <h3 id="создание-сервера">Создание сервера</h3>
-<p><span class="warning">Сервер нужен будет для разработки плагина!</span></p>
+<p><span class="warning">Сервер нужен будет для отладки плагина.</span></p>
 <ul>
 <li>Скачайте нужное вам ядро. P.S - <a href="#популярные-ядра">они были тут</a>.<br>
 Напомню, что я выбрал <em>Spigor-1.16.4</em>.</li>
@@ -166,24 +215,25 @@
 <p>Для удобства создадим папку для сервера и перенесём туда наше ядро.</p>
 <ul>
 <li>Создадим запускной файл<br>
-Для windows "&lt;название&gt;.bat&gt;, для linux “&lt;название&gt;.sh”.<br>
-У меня  linux и файл будет называть “<a href="http://start.sh">start.sh</a>”, на windows может называться “start.bat”.<br>
-В файл вставляем следующее:<br>
-<code>java -Xmx1024M -Xms1024M -jar &lt;название ядра&gt;.jar nogui</code><br>
--Xmx/Xms - максимальное и минимальное выделение оперативной памяти для сервера.<br>
-Можете убрать <em>nogui</em> и посмотреть, что будет.<br>
-В моём случае фай выглядит так:<br>
-<code>java -Xmx1024M -Xms1024M -jar spigot-1.16.4.jar nogui</code></li>
+Для windows <strong>“&lt;название&gt;.bat&gt;”</strong>, для linux <strong>“&lt;название&gt;.sh”</strong>.<br>
+<strong>У меня</strong> <em><strong>gnu linux</strong></em> и файл будет называть <em>“<a href="http://start.sh">start.sh</a>”</em>, на windows может называться <em>“start.bat”</em>.<br>
+<strong>В файл вставляем следующее:</strong><br>
+<code>java -Xmx1024M -Xms1024M -jar &lt;название ядра&gt;.jar nogui</code></li>
 </ul>
-<p><span class="warning">Может быть такое, что у вас не включены расширения у файлов!!! Но все ядра имеют расширение <em>.jar</em> и не нужно писать &lt;название ядра.jar&gt; <em>.jar</em> . А вообще советую их включить. </span></p>
+<blockquote>
+<p>-Xmx/Xms - максимальное и минимальное выделение оперативной памяти для сервера.</p>
+</blockquote>
+<p><strong>В моём случае файл выглядит так:</strong><br>
+<code>java -Xmx1024M -Xms1024M -jar spigot-1.16.4.jar nogui</code></p>
+<p><span class="warning">Может быть такое, что у вас не включены расширения у файлов и вы не видите <em>.jar</em>, но писать &lt;название.jar&gt;.jar не надо!!!</span></p>
 <span class="advice">
-Жизненный взлом (live hack) если вы забыли, что нужно вставлять, пишем в поисковик *"скачать майнкрафт сервер"*, переходим на minecraft.net <span class="spy"> (это официальный сайт майна если шо)</span> и там находим нужную нам строчку. <a href="https://www.minecraft.net/ru-ru/download/server">Вот прямая ссылка</a>
+Жизненный взлом (live hack) - если вы забыли, что нужно вставлять, пишем в поисковик "скачать майнкрафт сервер", переходим на minecraft.net <span class="spy"> (это официальный сайт майна если шо)</span> и там находим нужную нам строчку. <a href="https://www.minecraft.net/ru-ru/download/server">Вот прямая ссылка</a>
 </span>
 <ul>
-<li>Запускаем наш .bat или .sh файл.</li>
-<li>После загрузки появиться файл eula.txt<br>
-это соглашение. Просто заходим в него и заменяем<br>
-<code>eula=false</code> на <code>eula=true</code></li>
+<li>Запускаем наш <em>.bat</em> или <em>.sh</em> файл.</li>
+<li>После загрузки появиться файл <strong>eula.txt</strong><br>
+это соглашение. Просто заходим в него и <strong>заменяем<br>
+<code>eula=false</code> на <code>eula=true</code></strong></li>
 <li>Снова запускаем .bat/.sh файл</li>
 <li>После окончания загрузки ваш сервер готов к работе.<br>
 Чтобы на него зайти используйте <em>localhost:25565</em>.</li>
@@ -191,7 +241,8 @@
 <p><span class="warning">Если вы на пиратской версии майнкрафта выключите online-mod!!!</span></p>
 <h3 id="настройка-server.proparties">Настройка <em>server.proparties</em></h3>
 <p><span class="spy">Текст не для копирования!</span></p>
-<pre><code>gamemode=survival // можно поменять на creative.
+<pre class=" language-markdown"><code class="prism  language-markdown">server.proparties
+gamemode=survival // можно поменять на creative.
 enable-command-block=false // если знаете, что такое КБ ставим true)).
 level-name=world // название мира (не сервера).
 motd=A Minecraft Server // описание сервера в меню серверов,можно '§'.
@@ -257,12 +308,14 @@ server-port=25565 // оставляем
 <li>В src создадим <em>“plugin.yml”</em></li>
 </ol>
 <p><strong>В него пишем обязательные поля:</strong></p>
-<pre class=" language-yml"><code class="prism  language-yml"><span class="token key atrule">name</span><span class="token punctuation">:</span> &lt;название<span class="token punctuation">&gt;</span> <span class="token comment"># Для удобства пишу TutPlugin (название проекта)</span>
+<pre class=" language-yml"><code class="prism  language-yml">plugin.yml
+<span class="token key atrule">name</span><span class="token punctuation">:</span> &lt;название<span class="token punctuation">&gt;</span> <span class="token comment"># Для удобства пишу TutPlugin (название проекта)</span>
 <span class="token key atrule">main</span><span class="token punctuation">:</span> &lt;домен<span class="token punctuation">&gt;</span>.&lt;название<span class="token punctuation">&gt;</span> <span class="token comment"># путь к нашему Main классу (MainPlugin)</span>
 <span class="token key atrule">version</span><span class="token punctuation">:</span> &lt;номер<span class="token punctuation">&gt;</span> <span class="token comment"># Версию нашего плагина (Я ставлю "1.0.0" - релиз xD)</span>
 </code></pre>
 <p><em>Ещё я добавлю:</em></p>
-<pre class=" language-yml"><code class="prism  language-yml"><span class="token comment"># Это поле не обязательно, но приятно, чтобы в плагине стоял ты в авторах</span>
+<pre class=" language-yml"><code class="prism  language-yml">plugin.yml
+<span class="token comment"># Это поле не обязательно, но приятно, чтобы в плагине стоял ты в авторах</span>
 <span class="token key atrule">author</span><span class="token punctuation">:</span> Werckut <span class="token comment"># все же должны знать кто создал сие чудо</span>
 </code></pre>
 <p><em><strong>Результат</strong></em><br>
@@ -278,10 +331,10 @@ server-port=25565 // оставляем
 Выбираем из выпадающего меню <strong>"Java"</strong><br>
 <img src="images/ide_7.png" alt="alt"></p>
 <p><em><strong>Дальше нам нужно унаследовать Main класс от JavaPlugin</strong></em></p>
-<pre class=" language-java"><code class="prism  language-java"><span class="token keyword">extends</span> <span class="token class-name">JavaPlugin</span>
+<pre class=" language-java"><code class="prism  language-java">MainPlugin<span class="token punctuation">.</span>java
+<span class="token keyword">extends</span> <span class="token class-name">JavaPlugin</span>
 </code></pre>
 <p><img src="images/ide_8.png" alt="alt"></p>
-<h2 id="структура-проекта">Структура проекта</h2>
 
     </div>
   </div>

@@ -1,10 +1,15 @@
+li:hover {
+    color: cadetblue;
+}
+
 .spy {
     color: rgb(180, 180, 180);
 }
 
 .warning {
-    text-align: justify;
-    padding: 5px 12px;
+    border-radius: 2px;
+    display: block;
+    text-align: center;
     background-color: gainsboro;
     border-left: 2px solid red;
     border-right: 2px solid red;
@@ -12,8 +17,9 @@
 }
 
 .advice {
-    text-align: justify;
-    padding: 5px 12px;
+    border-radius: 2px;
+    display: block;
+    text-align: center;
     background-color: gainsboro;
     border-left: 2px solid green;
     border-right: 2px solid green;
@@ -23,4 +29,18 @@
 .stackedit__toc ul ul li a::before {
     content: ">";
     margin: 0px 10px;
+}
+
+code::first-line {
+    color: #ccc;
+    white-space: normal;
+    border-left: 4px solid steelblue;
+    height: 20px;
+    font-weight: bolder;
+    margin: -5px;
+    text-decoration: underline;
+}
+code::first-letter {
+    color: rgb(150, 160, 170);
+    margin-left: 15px;
 }
