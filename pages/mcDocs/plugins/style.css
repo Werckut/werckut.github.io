@@ -8,24 +8,9 @@
     font-weight: bold;
     background: url(images/plugins_logo.png) no-repeat;
 }
-.stackedit__toc:hover::before {
-    background: url(images/plugins_logo.gif) no-repeat;
-}
-.stackedit__toc::before:hover {
-    transform: scale(3) translate(70px, 15px);
-}
-
 
 .stackedit__toc ul li:hover {
     color: cadetblue;
-}
-
-#подготовка:target body .stackedit__toc {
-    display: none;
-}
-
-#подготовка:target ~ p {
-    color: red; 
 }
 
 .stackedit__toc ul ul li a::before {
