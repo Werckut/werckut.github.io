@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Оператор if</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="условный-оператор-if">Условный оператор if</h1>
+<p><strong>Полная форма</strong></p>
+<pre class=" language-js"><code class="prism  language-js"><span class="token comment">// Если выполняется &lt;условие&gt; - выполняется &lt;код&gt; </span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token comment">/*&lt;условие&gt;*/</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">/*
+        &lt;код&gt;
+    */</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<pre class=" language-js"><code class="prism  language-js"><span class="token comment">// Если выполняется &lt;условие&gt; - выполняется &lt;код&gt;, иначе - выполняется &lt;код else&gt; </span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token comment">/*&lt;условие&gt;*/</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">/*
+        &lt;код&gt;
+    */</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token comment">/*
+        &lt;код else&gt;
+    */</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>Краткая форма</strong></p>
+<pre class=" language-js"><code class="prism  language-js"><span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token comment">/*&lt;условие&gt;*/</span><span class="token punctuation">)</span> <span class="token comment">/*&lt;код&gt;*/</span><span class="token punctuation">;</span>
+</code></pre>
+<pre class=" language-js"><code class="prism  language-js"><span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token comment">/*&lt;условие&gt;*/</span><span class="token punctuation">)</span>
+    <span class="token comment">/*&lt;код&gt;*/</span><span class="token punctuation">;</span>
+</code></pre>
+<pre class=" language-js"><code class="prism  language-js"><span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token comment">/*&lt;условие&gt;*/</span><span class="token punctuation">)</span> <span class="token comment">/*&lt;код&gt;*/</span><span class="token punctuation">;</span>
+<span class="token keyword">else</span> <span class="token comment">/*&lt;код else&gt;*/</span><span class="token punctuation">;</span>
+</code></pre>
+<pre class=" language-js"><code class="prism  language-js"><span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token comment">/*&lt;условие&gt;*/</span><span class="token punctuation">)</span>
+    <span class="token comment">/*&lt;код&gt;*/</span><span class="token punctuation">;</span>
+<span class="token keyword">else</span>
+    <span class="token comment">/*&lt;код else&gt;*/</span><span class="token punctuation">;</span>
+</code></pre>
+<p><strong>Пример:</strong></p>
+<pre class=" language-js"><code class="prism  language-js"><span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>a <span class="token operator">==</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"переменная a равна 2"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &lt;&lt;</span>
+<span class="token keyword">else</span> <span class="token punctuation">{</span> <span class="token comment">// X</span>
+    <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"переменная a не равна 2"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    document<span class="token punctuation">.</span><span class="token function">writeln</span><span class="token punctuation">(</span><span class="token string">"переменная a не равна 2"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<script type="text/javascript">
+    function example() {
+        var a = 10;
+        if (a == 2) alert("переменная a равна 2");
+        else {
+            alert("переменная a не равна 2");
+        }
+    }
+</script>
+<p><em><strong>Попробуй</strong></em></p>
+<button onclick="example()">Выполнить</button>
+</div>
+</body>
+</html>
