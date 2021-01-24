@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Оператор switch</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="условный-оператор-switch">Условный оператор switch</h1>
+<p><strong>Запись</strong></p>
+<pre class=" language-js"><code class="prism  language-js"><span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+<span class="token keyword">switch</span> <span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">case</span> <span class="token number">0</span><span class="token punctuation">:</span> <span class="token comment">// выполняется если a == 0</span>
+        <span class="token comment">//&lt;код&gt;</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">case</span> <span class="token number">1</span><span class="token punctuation">:</span> <span class="token comment">// если a == 1</span>
+        <span class="token comment">//&lt;код&gt;</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">case</span> <span class="token number">2</span><span class="token punctuation">:</span> <span class="token comment">// ВЫПОЛНЯЕТСЯ</span>
+        <span class="token comment">//&lt;код&gt;</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">case</span> <span class="token number">3</span><span class="token punctuation">:</span> <span class="token comment">// если a == 3</span>
+        <span class="token comment">//&lt;код&gt;</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>Пример</strong></p>
+<pre class=" language-js"><code class="prism  language-js"><span class="token keyword">switch</span> <span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">case</span> <span class="token number">0</span><span class="token punctuation">:</span>
+        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"Hello"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">case</span> <span class="token number">1</span><span class="token punctuation">:</span>
+        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"my"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">case</span> <span class="token number">2</span><span class="token punctuation">:</span>
+        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"dear"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">case</span> <span class="token number">3</span><span class="token punctuation">:</span>
+        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"World"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">default</span><span class="token punctuation">:</span>
+        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"Это стандартное оповещение"</span><span class="token punctuation">)</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>        
+<span class="token punctuation">}</span>
+</code></pre>
+<p><em><strong>Попробуй</strong></em></p>
+<script type="text/javascript">
+    function example1() {
+        var val = document.getElementById('range').value;
+        document.getElementById('str').innerHTML = "Вы ввели: " + val;
+        switch (parseInt(val)) {
+            case 0:
+                alert("Hello");
+                break;
+            case 1:
+                alert("my");
+                break;
+            case 2:
+                alert("dear");
+                break;
+            case 3:
+                alert("World");
+                break;
+            default:
+                alert("Это стандартное оповещение")
+                break;
+        }
+    }
+</script>
+<br><input id="range" type="range" title="Выберите значение" min="0" max="5">
+<div id="str"></div>
+<button onclick="example1()">Выполнить</button>
+</div>
+</body>
+
+</html>
