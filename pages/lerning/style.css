@@ -1,0 +1,66 @@
+.stackedit__toc::before {
+    content: "Plugin";
+    display: block;
+    text-align: center;
+    width: 120px;
+    height: 48px;
+    margin: 20px 0px -20px 20px;
+    font-weight: bold;
+    background: url(images/plugins_logo.png) no-repeat;
+}
+
+.stackedit__toc ul li:hover {
+    color: cadetblue;
+}
+
+.stackedit__toc ul ul li a::before {
+    content: "► ";
+    margin: 0px 5px;
+}
+
+.spy {
+    color: rgb(180, 180, 180);
+}
+
+.warning {
+    box-shadow: 0px 0px 3px 1px rgba(19, 35, 48, 0.2) inset;
+    border-radius: 2px;
+    display: block;
+    text-align: center;
+    background-color: gainsboro;
+    border-left: 2px solid red;
+    border-right: 2px solid red;
+    color: red;
+}
+
+.advice {
+    box-shadow: 0px 0px 3px 1px rgba(19, 35, 48, 0.2) inset;
+    border-radius: 2px;
+    display: block;
+    text-align: center;
+    background-color: gainsboro;
+    border-left: 2px solid green;
+    border-right: 2px solid green;
+    color: green;
+}
+
+code::first-line {
+    color: #ccc;
+    white-space: normal;
+    border-left: 4px solid cadetblue;
+    height: 20px;
+    font-weight: bolder;
+    margin: -5px;
+    text-decoration: underline;
+}
+code::first-letter {
+    color: rgb(150, 160, 170);
+    margin-left: 15px;
+}
+
+code {
+    box-shadow: 4px 4px 0px 0px rgba(19, 35, 48, 0.2);
+    border-right: cadetblue 2px solid;
+    border-left: cadetblue 2px solid;
+    border-radius: 2px;
+}

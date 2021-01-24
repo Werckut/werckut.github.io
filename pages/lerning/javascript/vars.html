@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Переменные</title>
+    <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+    <div class="stackedit__left">
+        <div class="stackedit__toc">
+
+            <ul>
+                <li><a href="#переменные">Переменные</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="stackedit__right">
+        <div class="stackedit__html">
+            <p><code>$ - document.write(|);</code></p>
+            <h1 id="переменные">Переменные</h1>
+            <p><strong>var</strong></p>
+            <pre class=" language-js"><code class="prism  language-js"><span class="token comment">// var</span>
+<span class="token keyword">var</span> v <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> v <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+
+  <span class="token function">alert</span><span class="token punctuation">(</span>v<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// $ 10 (внутри блока)</span>
+<span class="token punctuation">}</span>
+<span class="token function">alert</span><span class="token punctuation">(</span>v<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// $ 10 (снаружи блока то же самое)</span>
+</code></pre>
+            <p><strong>const</strong></p>
+            <pre class=" language-js"><code class="prism  language-js"><span class="token comment">// const нельзя менять</span>
+<span class="token keyword">const</span> apple <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+apple <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span> <span class="token comment">// $ ошибка</span>
+
+<span class="token comment">// В остальном const полностью аналогично let</span>
+</code></pre>
+            <p><strong>let</strong></p>
+            <pre class=" language-js"><code class="prism  language-js"><span class="token comment">// let 1</span>
+<span class="token keyword">let</span> l1 <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> l1 <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+
+  <span class="token function">alert</span><span class="token punctuation">(</span>l1<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// $ 10 (внутри блока)</span>
+<span class="token punctuation">}</span>
+<span class="token function">alert</span><span class="token punctuation">(</span>l1<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// $ 5 (снаружи блока значение не изменилось)</span>
+</code></pre>
+            <pre class=" language-js"><code class="prism  language-js"><span class="token comment">// let 2</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> l2 <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+
+  <span class="token function">alert</span><span class="token punctuation">(</span>l2<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// $ 10 (внутри блока)</span>
+<span class="token punctuation">}</span>
+<span class="token function">alert</span><span class="token punctuation">(</span>l2<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// $ ошибка!</span>
+</code></pre>
+            <p><strong>Ошибки</strong></p>
+            <pre class=" language-js"><code class="prism  language-js"><span class="token comment">// var существуют и до объявления. = "undefined"</span>
+<span class="token function">alert</span><span class="token punctuation">(</span>v<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// $ undefined</span>
+<span class="token keyword">var</span> v <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+<span class="token function">alert</span><span class="token punctuation">(</span>v<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// $ 10</span>
+</code></pre>
+            <pre class=" language-js"><code class="prism  language-js"><span class="token comment">// let до объявления вообще нет.</span>
+<span class="token function">alert</span><span class="token punctuation">(</span>l<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// $ ошибка: нет такой переменной</span>
+<span class="token keyword">let</span> l <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+<span class="token function">alert</span><span class="token punctuation">(</span>l<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// $ 5</span>
+</code></pre>
+            <pre class=" language-js"><code class="prism  language-js"><span class="token comment">// let нельзя повторно объявлять.</span>
+<span class="token keyword">let</span> l<span class="token punctuation">;</span>
+<span class="token keyword">let</span> l<span class="token punctuation">;</span> <span class="token comment">// $ ошибка: переменная x уже объявлена</span>
+</code></pre>
+            <blockquote>
+                <p>let хороши для циклов</p>
+            </blockquote>
+            <pre class=" language-js"><code class="prism  language-js"><span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i<span class="token operator">&lt;</span><span class="token number">10</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">/* &lt;...&gt; */</span><span class="token punctuation">}</span>
+<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i<span class="token operator">&lt;</span><span class="token number">10</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">/* &lt;...&gt; */</span> <span class="token punctuation">}</span>
+
+<span class="token function">alert</span><span class="token punctuation">(</span> i <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// $ ошибка: i несуществует</span>
+</code></pre>
+            <p><strong>Задание переменных</strong></p>
+            <pre class=" language-js"><code class="prism  language-js"><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">10</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> d <span class="token operator">=</span> <span class="token number">1.5</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> s <span class="token operator">=</span> <span class="token string">"string"</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> b <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> b_lol <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">?</span> <span class="token boolean">true</span> <span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+        <span class="token operator">^</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">)</span> b <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+        <span class="token keyword">else</span> b <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+</code></pre>
+            <p><strong>Операции над переменными</strong></p>
+            <pre class=" language-js"><code class="prism  language-js"><span class="token keyword">var</span> v1 <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+v1 <span class="token operator">=</span> v <span class="token operator">+</span> <span class="token number">2</span><span class="token punctuation">;</span> <span class="token comment">//$ 12</span>
+
+<span class="token keyword">var</span> v2 <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+v2 <span class="token operator">=</span> v <span class="token operator">-</span> <span class="token number">2</span><span class="token punctuation">;</span> <span class="token comment">//$ 8</span>
+
+<span class="token keyword">var</span> v3 <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+v3 <span class="token operator">=</span> v <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">;</span> <span class="token comment">//$ 20</span>
+
+<span class="token keyword">var</span> v4 <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+v4 <span class="token operator">=</span> v <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">;</span> <span class="token comment">//$ 5</span>
+
+<span class="token keyword">var</span> v5 <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+v5 <span class="token operator">=</span> v <span class="token operator">%</span> <span class="token number">2</span><span class="token punctuation">;</span> <span class="token comment">//$ 0</span>
+
+<span class="token keyword">var</span> v6 <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+v6 <span class="token operator">=</span> v <span class="token operator">%</span> <span class="token number">3</span><span class="token punctuation">;</span> <span class="token comment">//$ 1</span>
+
+<span class="token keyword">var</span> v7 <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+v7<span class="token operator">++</span><span class="token punctuation">;</span> <span class="token comment">// $ 11 - инкремент</span>
+v7<span class="token operator">--</span><span class="token punctuation">;</span> <span class="token comment">// $ 10 - декремент</span>
+v7 <span class="token operator">+=</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token comment">// 11</span>
+v7 <span class="token operator">-=</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token comment">// 10</span>
+</code></pre>
+            <p><strong>Сложение переменных</strong></p>
+            <pre class=" language-js"><code class="prism  language-js"><span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> b <span class="token operator">=</span> <span class="token number">1.5</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> d <span class="token operator">=</span> <span class="token number">5</span> <span class="token operator">+</span> <span class="token number">1.5</span><span class="token punctuation">;</span> <span class="token comment">//$ 51.5</span>
+<span class="token keyword">var</span> d <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token number">5</span> <span class="token operator">+</span> <span class="token number">1.5</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//$ 6.5</span>
+</code></pre>
+            <p><strong>Логические операции переменных</strong></p>
+            <pre class=" language-js"><code class="prism  language-js"><span class="token keyword">var</span> b1 <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">&gt;=</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token comment">// $(b1) - true</span>
+<span class="token keyword">var</span> b2 <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">&gt;=</span> <span class="token number">0</span> <span class="token operator">&amp;&amp;</span> <span class="token number">1</span> <span class="token operator">&lt;</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token comment">// $(b2) - false</span>
+<span class="token keyword">var</span> b3 <span class="token operator">=</span> <span class="token number">2</span> <span class="token operator">&lt;</span> <span class="token number">0</span> <span class="token operator">||</span> <span class="token number">1</span> <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token comment">// $(b3) - true</span>
+<span class="token keyword">var</span> b4 <span class="token operator">=</span> <span class="token operator">!</span><span class="token boolean">true</span><span class="token punctuation">;</span> <span class="token comment">// $ $(b4) - false</span>
+</code></pre>
+            <p><strong>Таблица условий</strong></p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th align="center">a</th>
+                        <th align="center">b</th>
+                        <th align="center">!a</th>
+                        <th align="center">!b</th>
+                        <th align="center">a &amp;&amp; b</th>
+                        <th align="center">a || b</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td align="center">false</td>
+                        <td align="center">false</td>
+                        <td align="center">true</td>
+                        <td align="center">true</td>
+                        <td align="center">false</td>
+                        <td align="center">false</td>
+                    </tr>
+                    <tr>
+                        <td align="center">true</td>
+                        <td align="center">false</td>
+                        <td align="center">false</td>
+                        <td align="center">true</td>
+                        <td align="center">false</td>
+                        <td align="center">true</td>
+                    </tr>
+                    <tr>
+                        <td align="center">false</td>
+                        <td align="center">true</td>
+                        <td align="center">true</td>
+                        <td align="center">false</td>
+                        <td align="center">false</td>
+                        <td align="center">true</td>
+                    </tr>
+                    <tr>
+                        <td align="center">true</td>
+                        <td align="center">true</td>
+                        <td align="center">fakse</td>
+                        <td align="center">false</td>
+                        <td align="center">true</td>
+                        <td align="center">true</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
