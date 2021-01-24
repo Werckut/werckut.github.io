@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>while.md</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><p><strong>Цикл while</strong></p>
+<p><strong>Полная форма</strong></p>
+<pre class=" language-js"><code class="prism  language-js"><span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token comment">/*&lt;условие&gt;*/</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// Пока выполняется &lt;условие&gt; - выполняется &lt;код&gt;</span>
+    <span class="token comment">/*
+        &lt;код&gt;
+    */</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>Краткая форма</strong></p>
+<pre class=" language-js"><code class="prism  language-js"><span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token comment">/*&lt;условие&gt;*/</span><span class="token punctuation">)</span> <span class="token comment">/*&lt;код&gt;*/</span><span class="token punctuation">;</span>
+
+<span class="token comment">// или</span>
+<span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token comment">/*&lt;условие&gt;*/</span><span class="token punctuation">)</span>
+    <span class="token comment">/*&lt;код&gt;*/</span><span class="token punctuation">;</span>
+</code></pre>
+<p><strong>Пример</strong></p>
+<pre class=" language-js"><code class="prism  language-js"><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+<span class="token keyword">while</span> <span class="token punctuation">(</span>i <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">%</span> <span class="token number">2</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">else</span> document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span>i <span class="token operator">+</span> <span class="token string">" "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// &amp; 109 87 65 43 21</span>
+    i<span class="token operator">--</span><span class="token punctuation">;</span> <span class="token comment">// уменшаем i, чтобы не сделать бесконечный цикл </span>
+<span class="token punctuation">}</span>
+</code></pre>
+<script type="text/javascript">
+    function example() {
+        var i = 10;
+        document.getElementById('str').innerHTML = "Результат: ";
+        while (i > 0) {
+            if (i % 2 == 0)
+                document.getElementById('str').innerHTML += i;
+            else {
+                document.getElementById('str').innerHTML += i + " ";
+            }
+            i--;
+        }
+    }
+</script>
+<button onclick="example()">Выполнить</button>
+<div id="str">Результат: </div>
+</div>
+</body>
+
+</html>
