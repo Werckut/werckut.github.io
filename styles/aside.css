@@ -1,36 +1,33 @@
 #aside-left {
-    background-color: #5a6572;
-    padding-top: 35px;
-    z-index: 1;
+	background-color: #5a6572;
+	padding-top: 35px;
+	z-index: 1;
 }
-
 #aside-left .title {
-    border-radius: 2px;
-    background-color: brown;
-    text-align: center;
-    width: 200px;
-    padding: 15px 0px;
-    position: relative;
-    left: 120px;
-    margin: 20px 0px;
-    transition-duration: 0.2s;
-    border: 2px #771e1e solid;
-    box-shadow: -30px 15px 0px 0px rgba(34, 60, 80, 0.5);
+	background-color: brown;
+	border: 2px #771e1e solid;
+	border-radius: 2px;
+	box-shadow: -30px 15px 0px 0px rgba(34, 60, 80, 0.5);
+	left: 120px;
+	margin: 20px 0px;
+	padding: 15px 0px;
+	position: relative;
+	text-align: center;
+	transition-duration: 0.2s;
+	width: 200px;
 }
-
 #aside-left .title:hover {
-    background-color: #911c1c ;
-    transform: scale(1.03);
+	background-color: #911c1c;
+	transform: scale(1.03);
 }
-
 #aside-left .aside-content {
-    background-color: #3e4650;
-    border-radius: 2px;
-    width: 80%;
-    margin: 0 auto;
-    padding: 10px;
+	background-color: #3e4650;
+	border-radius: 2px;
+	margin: 0 auto;
+	padding: 10px;
+	text-align: center;
+	width: 80%;
 }
-
 #aside-right-empty {
-    background-color: rgb(226, 226, 226);
+	background-color: rgb(226, 226, 226);
 }

@@ -1,17 +1,15 @@
 pre {
-    background-color: #fff;
+	background-color: #fff;
 }
-
 hr {
-    border: 2px solid #E1E4E8;
+	border: 2px solid #E1E4E8;
 }
-
 body {
-    width: 60%;
-    color: #24292E;
-    background-color: #fff;
-    margin: 50px auto;
-    padding: 50px;
-    border: 1px solid #E1E4E8;
-    border-radius: 6px;
+	background-color: #fff;
+	border: 1px solid #E1E4E8;
+	border-radius: 6px;
+	color: #24292E;
+	margin: 50px auto;
+	padding: 50px;
+	width: 60%;
 }
