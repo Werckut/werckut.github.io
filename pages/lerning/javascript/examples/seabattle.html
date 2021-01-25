@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(70, 70, 70); color: #fff;">
+    <script type="text/javascript">
+        const sys = new Array("⊡","⊞","⊟","⊠","⊙","⊕","⊖","⊗");
+        const _water = "⊡";
+        const _ship = "⊞";
+        const _bomd = "⊗";
+        const _dmg = "⊠";
+        var desk = new Array();
+
+        function deskClear(x, y) {
+            desk = [];
+            for (let i = 0; i != y; i++) {
+                desk[i] = new Array();
+                for (let j = 0; j != x; j++) {
+                    desk[i][j] = _water;
+                }
+            }
+            draw();
+        } 
+        function draw() {
+            document.getElementById('desk').innerHTML = "";
+            document.getElementById('desk2').innerHTML = "";
+            desk.forEach(i => {
+                i.forEach(j => {
+                    document.getElementById('desk').innerHTML += j;
+                    switch (j) {
+                        case _dmg:
+                            document.getElementById('desk2').innerHTML += _dmg;
+                            break;
+                        case _bomd:
+                            document.getElementById('desk2').innerHTML += _bomd;
+                            break;
+                        default:
+                            document.getElementById('desk2').innerHTML += _water;
+                            break;
+                    }
+                })
+                
+                document.getElementById('desk').innerHTML += "<br />";
+                document.getElementById('desk2').innerHTML += "<br />";
+            });
+        }
+        function drawShip(x, y, size, d) {
+            if (d) {
+                for (let i = 0; i < size; i++) {
+                    if (desk[y][x + i] == _water) desk[y][x + i] = _ship;
+                    else desk[y][x + i] = _dmg;
+                }
+            }
+            else {
+                for (let i = 0; i < size; i++) {
+                    if (desk[y + i][x] == _water) desk[y + i][x] = _ship;
+                    else desk[y + i][x] = _dmg;
+                } 
+            }
+            draw();
+        }
+        function drawBomd(x, y) {
+            if (desk[y][x] != _water) desk[y][x] = _dmg;
+            else desk[y][x] = _bomd;
+            draw();
+        }
+    </script>
+    <div style="display: flex;">
+        <div id="desk"></div>
+        <input id="y-input" type="range" value="1" max="10" min="1" style="display: flex; appearance: slider-vertical; width: 25px; height: 187px; transform: rotate(180deg);">
+    </div>
+    <input style="width: 270px; margin-left: -1px;" id="x-input" type="range" value="1" min="1" max="20">
+    
+    <label>size</label>
+    <input id="size-input" type="range" value="1" min="1" max="4">
+    <br/>
+    <button onclick="drawShip(document.getElementById('x-input').value - 1, document.getElementById('y-input').value - 1, document.getElementById('size-input').value, document.getElementById('direct-input').checked)">Рисуй корабль</button>
+    <button onclick="drawBomd(document.getElementById('x-input').value - 1, document.getElementById('y-input').value - 1)">Рисуй бомбу</button>
+    <input id="direct-input" type="checkbox"><label>direct</label>
+    <br>
+    <p>Второй игрок</p>
+    <div id="desk2"></div>
+    <button onclick="deskClear(20, 10)">Чисти</button>
+</body>
+</html>
