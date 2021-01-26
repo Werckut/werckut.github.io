@@ -1,6 +1,6 @@
 @media (max-width: 1000px) {
 	body {
-		grid-template: 1fr 1000px 200px / 200px 1fr 0.1fr;
+		grid-template: 1fr 1200px 200px / 200px 1fr 0.1fr;
 		grid-template-areas: "header header header"
         "aside-left viewport viewport"
         "aside-left footer footer";

@@ -1,23 +1,18 @@
 #viewport .view-item {
-	background-color: rgb(200, 200, 200);
-	border: 3px solid rgb(128, 128, 128);
 	border-radius: 8px;
 	margin: 50px auto;
 	padding: 20px;
+	color: black;
 	width: 80%;
 }
 .view-item .head {
-	background-color: rgb(128, 128, 128);
-	content: attr(div);
+	/* content: attr(div); */
+	border-radius: 4px 4px 0px 0px;
 	height: 25px;
 	margin: -20px -20px -10px -20px;
 	padding: 5px 0px 0px 10px;
 }
-.view-item a {
-	color: black;
-}
 .view-item .description {
-	background-color: rgb(190, 190, 190);
 	border: 1px solid rgb(180, 180, 180);
 	border-radius: 6px;
 	margin-bottom: 12px;

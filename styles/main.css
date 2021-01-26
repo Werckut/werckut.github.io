@@ -1,12 +1,7 @@
 body {
-	background-color: #F6F8FA;
 	margin: 0px;
 	padding: 62px 0px 0px 0px;
 }
 footer {
-	background-color: #ccc;
 	text-align: center;
-}
-footer p {
-	color: rgb(226, 226, 226);
 }

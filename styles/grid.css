@@ -1,6 +1,6 @@
 body {
 	display: grid;
-	grid-template: 1fr 100% 200px / 300px 1fr 0.1fr;
+	grid-template: 1fr 1200px 200px / 300px 1fr 0.1fr;
 	grid-template-areas: "header header header"
     "aside-left viewport aside-right-empty"
     "aside-left footer footer";
