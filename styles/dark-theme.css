@@ -1,5 +1,5 @@
 * {
-	color: #ffffff;
+	color: #cfcfcf;
 	transition-duration: 1s;
 }
 body {
@@ -7,6 +7,12 @@ body {
 }
 header {
 	background-color: #1F2023;
+}
+header *:not(button) {
+	color: #fff;
+}
+header button {
+	color: #000;
 }
 footer {
 	background-color: #1E2023;
@@ -36,4 +42,12 @@ footer {
 	background-color: #2C2F34;
 	border: 3px solid #1d1f22;
 	box-shadow: -10px 15px 0px 0px #2c2e339d;
+}
+#menu-top {
+	background-color: #4b4b4b;
+}
+#menu-top .menu-item {
+	background-color: #303030;
+	border: 1px solid #161616;
+	border-top-right-radius: 0.5em;
 }

@@ -1,6 +1,6 @@
 @media (max-width: 1000px) {
 	body {
-		grid-template: 1fr 1200px 200px / 200px 1fr 0.1fr;
+		grid-template: 1fr 1600px 200px / 200px 1fr 0.1fr;
 		grid-template-areas: "header header header"
         "aside-left viewport viewport"
         "aside-left footer footer";
@@ -24,8 +24,17 @@
 	#aside-right-empty {
 		display: none;
 	}
+	header {
+		justify-content: center;
+	}
+	header .text-logo {
+		display: none;
+	}
 	header ul {
 		display: none;
+	}
+	#showMenu-btn {
+		display: block;
 	}
 	#aside-left {
 		display: none;

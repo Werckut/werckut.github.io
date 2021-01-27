@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>units.md</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><p><strong>Absolute Units</strong><br>
+<code>PX</code> - считается абсолютной величиной, но относиться к DPI устройства.</p>
+<p><strong>Relative Units</strong><br>
+<code>EM</code> - Относительно родительского элемента.<br>
+<code>REM</code> - Относительно корневого элемента (тег HTML).<br>
+<code>%</code> - Относительно родительского элемента.<br>
+<code>VW</code> - Относительно ширины области просмотра.<br>
+<code>VH</code> - Относительно высоты окна просмотра.</p>
+<p>Относительные еденици расчитываються на базе шрифта родителя.<br>
+<em>В больщинстве браузеров, для тега html, font-size составляет 16px</em></p>
+<p><strong>Пример:</strong><br>
+1em = (1*16) = 16px<br>
+.5em = (0.5*16) = 8px</p>
+<p><strong>Полезно знать</strong><br>
+<em>Если вы поставите font-size на 10px, для тега html, то вы легко сможете расчитывать REM:</em></p>
+<pre class=" language-css"><code class="prism  language-css"><span class="token selector">html </span><span class="token punctuation">{</span>
+    <span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token number">10</span>px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">/* Или */</span>
+<span class="token selector">* </span><span class="token punctuation">{</span>
+    <span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token number">10</span>px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>Пример:</strong><br>
+<code>1rem</code> = 10*1 = 10px<br>
+<code>1.5rem</code> = 10*1.5 = 15px<br>
+<code>1.42rem</code> = 14px<br>
+<em>По умолчанию:</em><br>
+<code>1rem</code> = 16*1 = 16px<br>
+<code>1.5rem</code> = 16*1.5 = 24px<br>
+<code>1.42rem</code> = 23px</p>
+</div>
+</body>
+
+</html>

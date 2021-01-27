@@ -1,12 +1,15 @@
 * {
-	color: #000000;
+	color: #000;
 	transition-duration: 1s;
 }
 body {
 	background-color: #F6F8FA;
 }
 header {
-	background-color: #1F2023;
+	background-color: #24292E;
+}
+header *:not(button) {
+	color: #fff;
 }
 footer {
 	background-color: #ccc;
@@ -36,4 +39,12 @@ footer {
 	background-color: #c8c8c8;
 	border: 3px solid #808080;
 	box-shadow: -10px 15px 0px 0px #2c2e331f;
+}
+#menu-top {
+	background-color: #4b4b4b;
+}
+#menu-top .menu-item {
+	background-color: #303030;
+	border: 1px solid #161616;
+	border-top-right-radius: 0.5em;
 }

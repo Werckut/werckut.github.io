@@ -17,21 +17,22 @@
 <body>
     <header>
         <img class="logo" src="images/logo.png" alt="LOGO">
-        <p>Werckut GitPage</p>
-        <ul>
-            <li><a href="https://github.com/vital-forge">My organization</a></li>
-            <li><a href="https://github.com/Werckut">My GitHub</a></li>
-        </ul>
-        <button style="color: black;" id="switchThemeButton">Тёмная тема</button>
-        <div id="menu">
-            <div id="buttons">
-                <a id="open" href="#menu"><img src="images/menu-open.png" alt="OPEN"></a>
-                <a id="close" href="#"><img src="images/menu-close.png" alt="CLOSE"></a>
-            </div>
-            <div id="menu-buttom">
-                <div class="menu-item"><a href="https://github.com/vital-forge">My organization</a></div>
-                <div class="menu-item"><a href="https://github.com/Werckut">My GitHub</a></div>
-            </div>
+        <p class="text-logo">Werckut GitPage</p>
+        <div id="main-menu-items">
+            <ul>
+                <li><a href="https://github.com/vital-forge">My organization</a></li>
+                <li><a href="https://github.com/Werckut">My GitHub</a></li>
+            </ul>
+        </div>
+        <!-- TODO del title -->
+        <button title="тестовая функция" id="switchThemeButton">Тёмная тема</button>
+        <button id="showMenu-btn">Открыть меню</button>
+        <div id="menu-top">
+            <div class="menu-item"><a href="https://github.com/vital-forge">My organization</a></div>
+            <div class="menu-item"><a href="https://github.com/Werckut">My GitHub</a></div>
+            <div class="menu-item"><a href=""><strong>Что это за сайт?</strong></a></div>
+            <div class="menu-item"><strong>Обо мне</strong></div>
+            <div class="menu-item"><strong> * * * </strong></div>
         </div>
     </header>
     <aside id="aside-left">
@@ -56,12 +57,30 @@
     </aside>
     <div id="viewport">
         <div class="view-item">
-            <p class="head">GitHelp</p>
-            <h1>Git</h1>
+            <p class="head">Изменения сайта 27.01.2021</p>
+            <h1>Что нового?</h1>
             <div class="description">
-                Небольшая подсказка по git (мне её лень обновлять)
+                <ul>
+                    <li>Добавлена тёмная тема</li>
+                    <li>Верхнее меню<span style="font-size: 12px;">(которое появляется при маленьком размере окна)</span> теперь работает на чистом js</li>
+                    <li>Переписана шапка(header) более чистым кодом</li>
+                    <li>Убраны лишние css файлы и основные таблицы перенесены в main.css</li>
+                    <li>Появилась css шпоргалка <a href="pages/lerning/css/index.html">жми</a></li>
+                    <li>Изменено поведение окна, при изменении его размеров</li>
+                </ul>
             </div>
             <a href="pages/gitHelp.html">Full Version</a>
+        </div>
+        <div class="view-item_groupe">
+            <h1>Git</h1>
+            <div class="view-item">
+                <p class="head">GitHelp</p>
+                <h1>Git</h1>
+                <div class="description">
+                    Небольшая подсказка по git (мне её лень обновлять)
+                </div>
+                <a href="pages/gitHelp.html">Full Version</a>
+            </div>
         </div>
         <div class="view-item_groupe">
             <h1>Web</h1>
@@ -86,17 +105,18 @@
                 <p class="head">Изучение css3</p>
                 <h1>css3</h1>
                 <div class="description">
-                    W.I.P
+                    Что-то уже есть
                 </div>
-                <a href="">Full Version</a>
+                <a href="pages/lerning/css/index.html">Full Version</a>
             </div>
         </div>
     </div>
     <aside id="aside-right-empty"></aside>
     <footer>
-        <p>This page was created for 1 hour)))0)0).</p>
+        <p style="color: rgba(255, 255, 255, 0.05);">This page was created for 1 hour)))0)0).</p>
     </footer>
     <script src="scripts/switch-theme.js"></script>
+    <script src="scripts/menu-top.js"></script>
 </body>
 
 </html>
