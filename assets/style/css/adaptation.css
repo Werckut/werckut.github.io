@@ -1,0 +1,21 @@
+@media screen and (max-width: 900px) {
+    #sidebar {
+        display: none;
+    }
+    #header__nav {
+        display: none;
+    }
+    #options__compact_menu_button {
+        display: inline-block;
+    }
+    header {
+        flex-direction: column;
+        row-gap: 10px;
+    }
+}   
+
+@media screen and (min-width: 900px) {
+    #options__compact_menu_button {
+        display: none;
+    }
+} 

@@ -1,0 +1,36 @@
+.main__fieldset {
+	padding: 5px 15px 0px 15px;
+	margin-top: 50px;
+}
+.main_content_block {
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-radius: 4px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.main_content_block__title {
+	border-radius: inherit;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	padding: 5px;
+}
+.main_content_block__subtitle {
+	margin-top: 8px;
+}
+.main_content_block__main {
+	margin: 20px;
+	padding: 20px;
+	text-align: left;
+}
+.main_content_block__link::before {
+	content: "> ";
+}
+#header__compact_menu {
+	position: absolute;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	left: 0;
+	background-color: red;
+}

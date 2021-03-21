@@ -1,123 +1,110 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Werckut GitPage</title>
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/grid.css">
-    <link rel="stylesheet" href="styles/aside.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/adaptive.css">
-    <link rel="stylesheet" href="styles/viewport.css">
-    <link rel="stylesheet" href="styles/light-theme.css" id="themeMode">
+    <title>Document</title>
+    <!-- imports styles -->
+    <link id="themeType" rel="stylesheet" href="assets/style/css/themes/light-theme.css">
+    <link rel="stylesheet" href="assets/style/css/import.css">
 </head>
-
 <body>
-    <header>
-        <img class="logo" src="images/logo.png" alt="LOGO">
-        <p class="text-logo">Werckut GitPage</p>
-        <div id="main-menu-items">
-            <ul>
-                <li><a href="https://github.com/vital-forge">My organization</a></li>
-                <li><a href="https://github.com/Werckut">My GitHub</a></li>
-            </ul>
-        </div>
-        <!-- TODO del title -->
-        <button title="тестовая функция" id="switchThemeButton">Тёмная тема</button>
-        <button id="showMenu-btn">Открыть меню</button>
-        <div id="menu-top">
-            <div class="menu-item"><a href="https://github.com/vital-forge">My organization</a></div>
-            <div class="menu-item"><a href="https://github.com/Werckut">My GitHub</a></div>
-            <div class="menu-item"><a href=""><strong>Что это за сайт?</strong></a></div>
-            <div class="menu-item"><strong>Обо мне</strong></div>
-            <div class="menu-item"><strong> * * * </strong></div>
+    <header id="main_header">
+        <a class="header__logo" href="#">
+            <img class="header__img" style="height: 50px" src="https://camo.githubusercontent.com/1765e5edee124ac5f4b74835420579edeec54806fb731c84f7cd4f58fc02717e/68747470733a2f2f692e6962622e636f2f5857684330664c2f636f64696e672d6465736b2d666c61742d766563746f722d75692d75782d64657369676e2d696c6c757374726174696f6e2d6d6f74696f6e2d616e696d6174696f6e2d676966322e676966" alt="W">
+            <p class="header__title">Werckut GitPage</p>
+        </a>
+        <nav id="header__nav">
+            <a class="nav__link" href="#">My.organisation</a>
+            <a class="nav__link" href="#">GitHub</a>
+            <a class="nav__link" href="https://boosty.to/werckut">Donate</a>
+        </nav>
+        <div id="header__compact_menu"></div>
+        <div class="header__options">
+            <button id="switchThemeButton">Сменить тему</button>
+            <button id="options__compact_menu_button">ОМ</button>
         </div>
     </header>
-    <aside id="aside-left">
-        <div class="title"><a href=""><strong>Что это за сайт?</strong></a></div>
-        <div class="aside-content">
-            <p>
-                Этот сайт - мой путь в программировании. <br>
-                Копирование информации запрещается, но я не знаю как сохранить то, что находится в интернете и поэтому это остаётся на
-                вашей совести. <br>
-                Сайт создан в первую очередь для лучшего обучения(моего) и распространения информации.
-                Сайт - большая шпоргалка.
-            </p>
-        </div>
-        <div class="title"><strong>Обо мне</strong></div>
-        <div class="aside-content">
-            <p>Java, web(html5, css3, js)</p>
-        </div>
-        <div class="title"><strong> * * * </strong></div>
-        <div class="aside-content">
-            <a href="pages/mcDocs/plugins/1.16.4.html">* * *</a>
-        </div>
-    </aside>
-    <div id="viewport">
-        <div class="view-item">
-            <p class="head">Изменения сайта 27.01.2021</p>
-            <h1>Что нового?</h1>
-            <div class="description">
-                <ul>
-                    <li>Добавлена тёмная тема</li>
-                    <li>Верхнее меню<span style="font-size: 12px;">(которое появляется при маленьком размере окна)</span> теперь работает на чистом js</li>
-                    <li>Переписана шапка(header) более чистым кодом</li>
-                    <li>Убраны лишние css файлы и основные таблицы перенесены в main.css</li>
-                    <li>Появилась css шпоргалка <a href="pages/lerning/css/index.html">жми</a></li>
-                    <li>Изменено поведение окна, при изменении его размеров</li>
-                    <li>Добавлен cheatsheet по html <a href="pages/cheatsheets/html.html">жми</a></li>
-                </ul>
-            </div>
-            <a href="pages/gitHelp.html">Full Version</a>
-        </div>
-        <div class="view-item_groupe">
-            <h1>Git</h1>
-            <div class="view-item">
-                <p class="head">GitHelp</p>
-                <h1>Git</h1>
-                <div class="description">
-                    Небольшая подсказка по git (мне её лень обновлять)
+    <main>
+        <h3>Мой сайт 2.0v</h3>
+        <fieldset class="main__fieldset">
+            <legend>Cheat sheets</legend>
+            <div class="main_content_block">
+                <div class="main_content_block__title" style="background: linear-gradient(40deg, #99331e 0%, #d13a1b 50%, #99331e 100%);">Git</div>
+                <div class="main_content_block__subtitle">Небольшая шпоргалка по git</div>
+                <div class="main_content_block__main">
+                    <a class="main_content_block__link" href="assets/pages/cheatsheets/gitHelp.html">Смотреть</a>
                 </div>
-                <a href="pages/gitHelp.html">Full Version</a>
             </div>
-        </div>
-        <div class="view-item_groupe">
-            <h1>Web</h1>
-            <div class="view-item">
-                <p class="head">Изучение JS</p>
-                <h1>JavaScript</h1>
-                <div class="description">
-                    Мой путь в изучении js
-                    Последнее изменение: 25.01.2021
+        </fieldset>
+        <fieldset class="main__fieldset">
+            <legend>Web</legend>
+            <div class="main_content_block">
+                <div class="main_content_block__title" style="background: linear-gradient(40deg, #E9CA31 0%, #F7DE21 50%, #E9CA31 100%)">JavaScript</div>   
+                <div class="main_content_block__main">
+                    <a class="main_content_block__link" href="assets/pages/lerning/javascript/index.html">Обучение</a>
                 </div>
-                <a href="pages/lerning/javascript/index.html">Full Version</a>
             </div>
-            <div class="view-item">
-                <p class="head">Изучение html5</p>
-                <h1>html5</h1>
-                <div class="description">
-                    W.I.P
+            <div class="main_content_block">
+                <div class="main_content_block__title" style="background: linear-gradient(40deg, #E6512A 0%, #E96B28 50%, #E6512A 100%)">HTML</div>   
+                <div class="main_content_block__main">
+                    <a class="main_content_block__link" href="assets/pages/lerning/html/index.html">Обучение</a>
                 </div>
-                <a href="">Full Version</a>
             </div>
-            <div class="view-item">
-                <p class="head">Изучение css3</p>
-                <h1>css3</h1>
-                <div class="description">
-                    Что-то уже есть
+            <div class="main_content_block">
+                <div class="main_content_block__title" style="background: linear-gradient(40deg, #3971BD 0%, #56ABE3 50%, #3971BD 100%)">CSS</div>   
+                <div class="main_content_block__main">
+                    <a class="main_content_block__link" href="assets/pages/lerning/css/index.html">Обучение</a>
                 </div>
-                <a href="pages/lerning/css/index.html">Full Version</a>
             </div>
-        </div>
+        </fieldset>
+        <fieldset class="main__fieldset">
+            <legend>Games</legend>
+            <fieldset class="main__fieldset">
+                <legend>Minecraft</legend>
+                <a class="main_content_block__link" href="assets/pages/mcDocs/index.html">Смотреть всё</a>
+                <div class="main_content_block">
+                    <div class="main_content_block__title" style="color: #DD921B; background: linear-gradient(40deg, #373736 0%, #4A4A49 50%, #373736 100%)">Plugins</div>   
+                    <div class="main_content_block__subtitle">Разжёвываю важные моменты</div>
+                    <div class="main_content_block__main">
+                        <a class="main_content_block__link" href="assets/pages/mcDocs/plugins/1.16.4.html">v1.16+</a>
+                    </div>
+                </div>
+                <div class="main_content_block">
+                    <div class="main_content_block__title" style="color: #F3EEF0; background: linear-gradient(40deg, #1a2131 0%, #263048 50%, #1a2131 100%)">Mods</div>   
+                    <div class="main_content_block__subtitle">W.I.P</div>
+                    <div class="main_content_block__main">
+                        <a class="main_content_block__link" href="#">v1.16+</a>
+                    </div>
+                </div>
+            </fieldset>
+        </fieldset>
+    </main>
+    <div id="sidebar">
+        <aside class="sidebar__item">
+            <div class="aside__title">Изменения</div>
+            <div class="aside__subtitle"><time datetime="09-02-2021 19:20">09-02-2021</time></div>
+            <div class="aside__content">
+                * Полностью изменил дизайн сайта<br>
+                (сайт был написан с нуля)<br>
+                <a href="#">старая версия сайта</a>
+            </div>
+        </aside>
+        <aside class="sidebar__item">
+            <div class="aside__title">TO-DO</div>
+            <div class="aside__content">
+                * Тёмная тема
+            </div>
+        </aside>
+        <aside class="sidebar__item">
+            <div class="aside__title">Инструменты</div>
+            <div class="aside__content">
+                * JavaScript, Html, Css, Java
+            </div>
+        </aside>
     </div>
-    <aside id="aside-right-empty"></aside>
-    <footer>
-        <p style="color: rgba(255, 255, 255, 0.05);">This page was created for 1 hour)))0)0).</p>
-    </footer>
-    <script src="scripts/switch-theme.js"></script>
-    <script src="scripts/menu-top.js"></script>
+    <footer>footer</footer>
+    <script src="assets/js/changeTheme.js"></script>
+    <script src="assets/js/compact_menu.js"></script>
 </body>
-
 </html>

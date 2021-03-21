@@ -1,0 +1,80 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	color: inherit;
+	margin: 0;
+	padding: 0;
+}
+/* body */
+body {
+	overflow-x: hidden;
+}
+/* header */
+header {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	padding: 5px 10vw;
+}
+.header__logo {
+	align-items: center;
+	display: flex;
+	gap: 20px;
+}
+.nav__link {
+	text-decoration: none;
+}
+/* main */
+main {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	padding: 35px;
+}
+/* footer */
+footer {
+	padding: 15px;
+}
+/* sidebar */
+#sidebar {
+	padding: 15px;
+}
+.sidebar__item {
+	margin: 30px 0;
+}
+.aside__title {
+	border-radius: 4px;
+	bottom: 10px;
+	margin-bottom: 10px;
+	max-width: 250px;
+	overflow: hidden;
+	padding: 10px 0;
+	position: relative;
+	right: 2em;
+	text-align: center;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	transition-duration: .5s;
+}
+.aside__title:hover {
+	transform: scale(1.05);
+}
+.aside__subtitle {
+	bottom: 2px;
+	display: flex;
+	max-width: 50vw;
+	opacity: 0;
+	padding: 10px;
+	position: absolute;
+	right: 2px;
+	word-wrap: normal;
+}
+.aside__content {
+	border-radius: 4px;
+	padding: 10px;
+}
+.aside__title:hover ~ .aside__subtitle {
+	opacity: 1;
+	transition-duration: .5s;
+}

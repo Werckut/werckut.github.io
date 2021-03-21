@@ -1,0 +1,14 @@
+/* body */
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template: auto 1fr auto / 1fr auto;
+    grid-template-areas:
+    "header header"
+    "main sidebar"
+    "footer sidebar";
+}
+#sidebar {grid-area: sidebar;}
+header {grid-area: header;}
+main {grid-area: main;}
+footer {grid-area: footer;}
